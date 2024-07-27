@@ -42,7 +42,6 @@ body {
 }
 
 .header {
-    background: var(--bg);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -57,11 +56,11 @@ body {
 }
 
 .header .logo img {
-  
+  transition: .2s ease-in-out;
 }
 
 .header .logo img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2) translateY(-5px);
 }
 
 
@@ -214,6 +213,206 @@ span {
     background-color: var(--main-color);
     transform: scale(1.2) translateY(-5px);
     box-shadow: 0 0 8px var(--main-color);
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+
+}  
+
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+    border-bottom: none;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.about {
+    margin-top: 70px;
+}
+
+.about h1 {
+    font-size: 45px;
+}
+
+h1:hover {
+    color: #d3ad7f;
+
+}
+h1 span:hover{
+    color: white;
+}
+.about .row {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background: var(--black);
+    flex-wrap: wrap; 
+    
+}
+
+.about .row img {
+    flex:1 1 45rem;
+}
+
+.about .row img {
+    width:100%;
+    height:500px;
+
+}
+.about .row img:hover{
+    transform: scale(1.1);
+    box-shadow: ;
+
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding:2rem;
+
+}
+
+.about .row .content h3 {
+    padding-left: 15px;
+    font-size: 3rem;
+    color: #c7a163;
+}
+
+.content h3 {
+    margin-bottom: 15px;
+}
+
+.about .row .content p {
+    font-size:1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-align: start;
+    max-width: none;
+    padding-right: 5px;
+    margin-bottom: 20px;
+
+
+}
+.btn {
+    margin-top: 1rem;
+    padding: 2rem 5rem;
+    font-size: 2rem;
+    color: #0c0c0c;
+    font-weight: 600;
+    background: var(--main-color);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background:white;
+}
+
+
+
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(images/bgg12.jpg);
+    background-size: cover;
+    margin-top: 70px;
+    
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-color: #d3ad7f;
+
+}
+
+.container h1 {
+    color: #d3ad7f;
+    margin-right: 40px;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.container h1 span {
+    color: rgb(202, 234, 236);
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.img {
+    width: 150px;
+    height: 500px;
+    border-radius: 30px;
+    position: relative;
+    transition: width 0.8s;
+}
+
+.img:nth-child(1) {
+    background-image: url(images/img1.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.img:nth-child(2) {
+    background-image: url(images/img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img:nth-child(3) {
+    background-image: url(images/img3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img:nth-child(4) {
+    background-image: url(images/img4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img:nth-child(5) {
+    background-image: url(images/img5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img:nth-child(6) {
+    background-image: url(images/img6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img h3 {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.2s, opacity 0.3s;
+    color: aliceblue;
+}
+
+.img:hover {
+    width: 400px;
+    cursor: pointer;
+}
+
+.img:hover h3 {
+    opacity: 1;
+    bottom: 25px;
 }
 
 @media (max-width: 991px) {
