@@ -43,7 +43,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1.5rem 7%;
     border-bottom: var(--border);
@@ -60,7 +60,7 @@ body {
 }
 
 .header .logo img:hover {
-    transform: scale(1.2) translateY(-5px);
+    transform: scale(1.2)
 }
 
 
@@ -103,8 +103,8 @@ header .search-form {
     display: flex;
     align-items: center;
     transform: scaleY(0);
-    /* transform-origin: top; */
-    transition: transform 0.3s ease-in-out;
+    transform-origin: top;
+    transition: transform 0.2s ease-in-out;
 }
 
 header .search-form.active {
@@ -215,6 +215,10 @@ span {
     box-shadow: 0 0 8px var(--main-color);
 }
 
+
+
+
+
 .heading {
     text-align: center;
     color: #fff;
@@ -322,6 +326,8 @@ h1 span:hover{
 
 
 
+
+
 .container {
     width: 100%;
     height: 100vh;
@@ -415,6 +421,68 @@ h1 span:hover{
     bottom: 25px;
 }
 
+
+
+
+
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap; 
+     gap: 1rem;
+
+}
+.contact .row .map {
+    width: 100%;
+    flex: 1 1 45rem;
+    object-fit: cover;
+
+}
+
+.form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+
+}
+
+.form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:var(--black);
+    border: var(--border);
+}
+
+.form .inputBox span  {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.inputBox span i {
+    background: none;
+}
+
+.form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background:none;
+}
+
 @media (max-width: 991px) {
     html {
         font-size: 55%;
@@ -434,12 +502,11 @@ h1 span:hover{
         top: 100%;
         right:0%;
         width: 50%;
-        background-color: var(--main-color);
+        background-color:rgb(220, 190, 131);
         width: 30rem;
-        height: calc(50vh - 9.5rem);
-        transition: transform 0.3s ease-in-out;
-    }
+        height: calc(55vh - 9.5rem);
 
+    }
 
     .navbar.active {
         display: block;
@@ -448,10 +515,16 @@ h1 span:hover{
 
     .header .navbar a {
         display: block;
-        color: var(--black);
+        color: black;
         margin: 1.5rem;
         padding: 1.5rem;
         font-size: 2rem;
+    }
+
+    .navbar a:hover {
+        color:whitesmoke;
+        border-bottom: .5rem solid white;
+        padding-bottom: .5rem;
     }
 
 
