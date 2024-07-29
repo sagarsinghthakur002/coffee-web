@@ -1,0 +1,176 @@
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+
+}  
+
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+    border-bottom: none;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.about {
+    margin-top: 70px;
+}
+
+.about h1 {
+    font-size: 45px;
+}
+
+h1:hover {
+    color: #d3ad7f;
+
+}
+h1 span:hover{
+    color: white;
+}
+
+.about .row  {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background: var(--black);
+    flex-wrap: wrap; 
+    
+}
+
+.about .row {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background: var(--black);
+    flex-wrap: wrap; 
+    
+}
+
+.about .row img {
+    flex:1 1 45rem;
+}
+
+.about .row img {
+    width:auto;
+    height:auto;
+
+}
+.about .row img:hover{
+    transform: scale(1.1);
+    box-shadow: ;
+
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding:2rem;
+
+}
+
+.about .row .content h3 {
+    padding-left: 15px;
+    font-size: 3rem;
+    color: #c7a163;
+}
+
+.content h3 {
+    margin-bottom: 15px;
+}
+
+.about .row .content p {
+    font-size:1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-align: start;
+    max-width: none;
+    padding-right: 5px;
+    margin-bottom: 20px;
+
+
+}
+.btn {
+    margin-top: 1rem;
+    padding: 2rem 5rem;
+    font-size: 2rem;
+    color: #0c0c0c;
+    font-weight: 600;
+    background: var(--main-color);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    background:white;
+}
+
+@media (max-width: 991px) {
+    .about .row img {
+        height: auto;
+    }
+
+    .about .row .content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 3rem;
+    }
+
+    .about h1 {
+        font-size: 35px;
+    }
+
+    .about .row img {
+        display: none;
+    }
+
+    .about .row .content {
+        padding: 1rem;
+    }
+
+    .about .row .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .about .row .content p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .heading {
+        font-size: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .about h1 {
+        font-size: 25px;
+    }
+
+    .about .row .content h3 {
+        font-size: 2rem;
+    }
+
+    .about .row .content p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 1rem 3rem;
+        font-size: 1.6rem;
+    }
+}
+
+
