@@ -43,6 +43,125 @@ body {
 
 
 
+
+
+            /* button add to card  */
+.button {
+    --width: 100px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color:#d3ad7f;;
+    --tooltip-color: #060606;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: right;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+    margin-left: 2px;
+    text-align: center;
+  }
+  
+  .button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: #555;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #555;
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .button::after,.button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-wrapper,.text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  .text,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .button:hover {
+    background: #222;
+  }
+  
+  .button:hover .text {
+    top: -100%;
+  }
+  
+  .button:hover .icon {
+    top: 0;
+  }
+  
+  .button:hover:before,.button:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .button:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .button:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+  
+  
+  
+  
+
 .menu .box-container {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -50,6 +169,8 @@ body {
     flex-wrap: wrap;
     margin-left: 30px;
     background:url(images/menubg.jpg);
+    align-items: center;
+    align-content: center;
 }
 
 .box-container .box {
@@ -58,8 +179,16 @@ body {
     border: var(--border);
     border-radius: 20px;
     margin-bottom: 20px;
-    margin-right: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
     transition: .2s ease-in-out;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* /* width:50rem;
+    height: 15rem; */
 
 }
 
@@ -74,6 +203,9 @@ body {
     height: 10rem;
     border-radius: 20px;
     transition: .2s ease-in-out;
+    width: 80px;
+    align-items: left;
+    margin-right: 20px;
 }
 
 
@@ -82,10 +214,13 @@ body {
     color: #FFF;
     font-size: 1.7rem;
     padding: 1rem 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 95px;
 
 }
 
-.box-container .box .price {
+.box-container .box .price  {
     color: #FFF;
     font-size: 2rem;
     padding: .5rem 0;
@@ -101,7 +236,7 @@ body {
 
 }
 
-.btm {
+/* .btm {
     padding: 1rem 1.5rem;
     font-size: 1.5rem;
     color: #0c0c0c;
@@ -110,11 +245,11 @@ body {
     cursor: pointer;
     text-align: center;
     border-radius: 25px;
-}
+} */
 
-.btm:hover {
+/* .btm:hover {
     background:white;
-}
+} */
 
 @media (max-width: 1200px) {
     .box-container {
@@ -132,6 +267,15 @@ body {
     .menu .heading span {
         font-size: 3rem;
     }
+
+.box-container .box {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50rem;
+  height: 15rem;
 }
 
 @media (max-width: 900px) {
