@@ -19,7 +19,7 @@
 
 .header a img {
     width: 10px;
-  transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .header a img:hover {
@@ -38,8 +38,8 @@
 .navbar a:hover {
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
-    padding-bottom: .5rem;
-}
+    padding-bottom: .5rem; 
+} 
 
 .icone div {
     color: #fff;
@@ -94,4 +94,58 @@ header .search-form label {
 
 .header .search-form label:hover {
     color: var(--main-color);
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .header .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right:0%;
+        width: 50%;
+        /* backdrop-filter: blur(100px); */
+        background:rgb(44, 41, 41);
+        width: 20rem;
+        height: calc(55vh - 9.5rem);
+        border-bottom-left-radius: 10px;
+
+    }
+
+    .navbar.active {
+        display: block;
+
+    }
+
+    .header .navbar a {
+        display: block;
+        color: #d3ad7f;
+        margin: 1.5rem;
+        padding: 1.5rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .navbar a:hover {
+        color:rgb(0, 0, 0);
+        padding-bottom: .5rem;
+    }
+
+
+    .header .search-form {
+        width: 90%;
+        right: 2rem;
+    }
+
 }
