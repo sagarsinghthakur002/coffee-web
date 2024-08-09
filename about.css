@@ -232,6 +232,14 @@ button {
     .about .row .content {
         text-align: center;
     }
+
+    .about h1 {
+        font-size: 1.9rempx;
+    }
+
+    .heading{
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -240,7 +248,7 @@ button {
     }
 
     .about h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .about .row img {

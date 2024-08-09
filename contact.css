@@ -9,6 +9,8 @@
 .row .map {
     flex: 1 1 45rem;
     object-fit: cover;
+    width: 500px;
+    height: 400px;
     
 }
 
@@ -192,6 +194,12 @@
 
     .row .map {
         width: 200;
+    }
+
+    .row .map {
+        width: 47rem;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
