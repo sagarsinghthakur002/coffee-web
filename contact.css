@@ -172,7 +172,8 @@
 
   .row .map {
     flex: 1 1 auto;
-    width:100vw;
+    width:40vw;
+    height: 400px;
     }
 
 
@@ -182,6 +183,12 @@
         margin-top: 10px;
         gap: 3rem;
     }
+    .row .map {
+        flex: 1 1 auto;
+        width:100vw;
+        height: 180px;
+        }
+    
 }
    
 

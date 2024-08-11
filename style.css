@@ -214,7 +214,7 @@ body {
 
 .box-container .box h3 {
     color: #FFF;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     padding: 1rem 0;
     margin-right: 5px;
     margin-left: 5px;
@@ -237,6 +237,8 @@ body {
     text-decoration: line-through;
 
 }
+
+
 
 /* .btm {
     padding: 1rem 1.5rem;
