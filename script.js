@@ -4,10 +4,14 @@ let  searchBtn = document.querySelector("#search-btn");
 let  searchForm = document.querySelector(".search-form");
 
 
+
+
 manuBtn.addEventListener("click", () => {
     navbar.classList.toggle("active");
     searchForm.classList.remove("active");   
 });
+
+
 
 
 searchBtn.addEventListener("click", () => {
@@ -15,6 +19,9 @@ searchBtn.addEventListener("click", () => {
     navbar.classList.remove("active");
     
 });
+
+
+
 
 window.onscroll =()=> {
     navbar.classList.remove("active");

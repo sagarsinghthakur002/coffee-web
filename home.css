@@ -11,6 +11,7 @@
     max-width: 60rem;
 }
 
+
 .home .content h3 {
    font-size:4rem;
    text-transform: uppercase;
@@ -26,9 +27,8 @@
     color: #fff;
     margin-left: 10px;
     text-align: center;
-
-
 }
+
 
  .content p {
     font-size: 1.3rem;
@@ -40,6 +40,7 @@
     max-width: 60rem;
 }
 
+
 .content .btn {
     background-color: var(--main-color);
     margin: 20px;
@@ -47,12 +48,14 @@
     height: 50px;
 }
 
+
 span {
     color: #d3ad7f;
     text-transform: uppercase;
     border-bottom: 2px solid;
     
 }
+
 
 .social-icons {
     gap: 20px;
